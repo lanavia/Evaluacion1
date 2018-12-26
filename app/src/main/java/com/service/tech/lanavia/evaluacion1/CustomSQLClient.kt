@@ -92,16 +92,15 @@ class CustomSQLClient(val context: Context,
             cursor = db.rawQuery("select * from Client", null)
             if (cursor.moveToFirst()) {
                 do {
-                   /* val id = cursor.getInt(0)
+                    val id = cursor.getInt(0)
                     val run:String = cursor.getString(1).toString()
-                    val name = cursor.getString(2).to
-                    val surname: String = cursor.getString(3)
-                    val city: String = cursor.getString(4)
-                    val address: String = cursor.getString(5)*/
+                    val name = cursor.getString(2).toString()
+                    val surname: String = cursor.getString(3).toString()
+                    val city: String = cursor.getString(4).toString()
+                    val address: String = cursor.getString(5).toString()
 
-                    val client = cursor as Client
 
-                     //client = Client(id,run,name,surname,city,address,null)
+                     val client = Client(id,run,name,surname,city,address,null)
                     lista.add(client)
                 } while (cursor.moveToNext())
 
