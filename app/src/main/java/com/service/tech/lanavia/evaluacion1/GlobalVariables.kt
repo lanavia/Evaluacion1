@@ -8,6 +8,23 @@ class GlobalVariables(): Application() {
     var myDB:CustomSQLClient? = null
     var clients:ArrayList<Client>? = null
 
+    val typeOfService = loadTypeOfService()
+
+
+
+     fun loadTypeOfService():ArrayList<TypeOfService>{
+         val l = ArrayList<TypeOfService>()
+
+         l.add(TypeOfService(1,"Pc") )
+         l.add(TypeOfService(2,"Laptop") )
+         l.add(TypeOfService(3,"Celular"))
+         l.add(TypeOfService(4,"Tablet"))
+         l.add(TypeOfService(5,"Impresora"))
+
+         return l
+     }
+
+
 
 
 
@@ -36,3 +53,4 @@ class GlobalVariables(): Application() {
     }
 
 }
+

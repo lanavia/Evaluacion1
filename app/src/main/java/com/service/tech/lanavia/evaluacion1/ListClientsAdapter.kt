@@ -1,6 +1,7 @@
 package com.service.tech.lanavia.evaluacion1
 
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,6 +16,7 @@ class ListClientsAdapter (val clientsItemList: ArrayList<Client>, val clickListe
     }
 
     override fun getItemCount(): Int {
+        Log.i("getItemCount ", clientsItemList.size.toString())
        return clientsItemList.size
     }
 
@@ -25,8 +27,10 @@ class ListClientsAdapter (val clientsItemList: ArrayList<Client>, val clickListe
 
 class ClientViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(client: Client) {
+        Log.i("ClientViewHolder ", client.name + client.surname)
+
         itemView.row_of_client_name.text = client.name + "-" + client.surname
-        itemView.row_of_client_run.text = client.run.toString()
+        itemView.row_of_client_run.text = client.run
     }
 }
 

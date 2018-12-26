@@ -29,7 +29,7 @@ class CustomSQLClient(val context: Context,
          */
         val queryClient = "CREATE TABLE Client(" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "run String not null"+
+                "run String not null, "+
                 "name String not null," +
                 "surname String not null," +
                 "city String," +
@@ -70,7 +70,7 @@ class CustomSQLClient(val context: Context,
             val resultado = db.insert("Client",null,cv)
             db.close()
 
-            if (resultado !=-1L){
+            if (resultado ==-1L){
                 Toast.makeText(context,"Cliente no agregado", Toast.LENGTH_SHORT).show()
             }else{
                 Toast.makeText(context, "Cliente agregado", Toast.LENGTH_SHORT).show()
@@ -89,17 +89,19 @@ class CustomSQLClient(val context: Context,
         try {
             val db = this.writableDatabase
             var cursor: Cursor? = null
-            cursor = db.rawQuery("select * from lista", null)
+            cursor = db.rawQuery("select * from Client", null)
             if (cursor.moveToFirst()) {
                 do {
-                    val id = cursor.getInt(0)
-                    val run:String = cursor.getString(1)
-                    val name = cursor.getString(2)
+                   /* val id = cursor.getInt(0)
+                    val run:String = cursor.getString(1).toString()
+                    val name = cursor.getString(2).to
                     val surname: String = cursor.getString(3)
                     val city: String = cursor.getString(4)
-                    val address: String = cursor.getString(5)
+                    val address: String = cursor.getString(5)*/
 
-                    val client = Client(id,run,name,surname,city,address,null)
+                    val client = cursor as Client
+
+                     //client = Client(id,run,name,surname,city,address,null)
                     lista.add(client)
                 } while (cursor.moveToNext())
 

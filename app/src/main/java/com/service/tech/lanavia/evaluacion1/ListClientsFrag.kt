@@ -34,10 +34,18 @@ class ListClientsFrag() : Fragment() {
 
         mycontext=context
 
+
+     /*   var myDataBase = (context as MainActivity).myDB
         var testClients:MainActivity = context as MainActivity
+*/
+
+
+        var myDataBase = (context as MainActivity).myDB
+        val testClients=myDataBase!!.listar()
+
 
         //create the respective adapter
-        rcvListClients.adapter = ListClientsAdapter(testClients.testClients!!, { clientItem : Client -> clientItemClicked(clientItem) } )
+        rcvListClients.adapter = ListClientsAdapter(testClients, { clientItem : Client -> clientItemClicked(clientItem) } )
 
 
 

@@ -2,10 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
               tools:context=".AddClientFrag" android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:text="@string/frg_add_client_run"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/lblAddFragRun"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtAddFragRun"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -14,7 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
             android:ems="10"
             android:id="@+id/txtAddFragName"/>
     <TextView
@@ -25,9 +34,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
             android:ems="10"
             android:id="@+id/txtAddFragSurname"/>
+    <TextView
+            android:text="@string/frg_add_client_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/lblAddFragCity"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textPersonName"
+            android:ems="10"
+            android:id="@+id/txtAddFragCity"/>
+    <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"/>
+    <TextView
+            android:text="@string/frg_add_client_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView5"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/spnAddFragTypeServ"
+    />
+    <TextView
+            android:text="@string/frg_add_client_description_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/lblAddFragDescService"/>
     <Button
             android:text="@string/btn_save"
             android:layout_width="match_parent"
