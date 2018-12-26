@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">evaluacion1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Servicio Tecnico Lanaviao</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="lblTitleAddfragment">Hello estas en el add client fragment</string>
+    <!-- left menu bar -->
+    <string name="nav_left_title">Clientes</string>
+    <string name="nav_left_title_add_client">Agregar</string>
+    <string name="nav_left_title_search_client">Buscar</string>
+    <string name="nav_left_title_list_client">Todos los clientes</string>
+
+    <!-- Data for Client Form -->
+    <string name="frg_add_client_run">Run</string>
+    <string name="frg_add_client_name">Nombre</string>
+    <string name="frg_add_client_surname">Apellido</string>
+    <string name="frg_add_client_address">Dirección</string>
+    <string name="frg_add_client_city">Comuna</string>
+    <string name="frg_add_client_name_service">Servicio</string>
+    <string name="frg_add_client_service">Servicio</string>
+    <string name="frg_add_client_serviceType">Tipo servicio</string>
+    <string name="frg_add_client_description_service">Descripción del servicio</string>
+    <string name="frg_add_client_purchase_date">Fecha de compra</string>
+    <string name="frg_add_client_start_date">Fecha Ingreso</string>
+    <string name="frg_add_client_deadline">Fecha estimada</string>
+    <string name="frg_add_client_ready_date">Fecha de entrega</string>
+
+
+    <!-- Data buttons -->
+    <string name="btn_save">Guardar</string>
+    <string name="btn_clear">Limpiar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home_fragment">Hello Home fragment</string>
+
+</resources>

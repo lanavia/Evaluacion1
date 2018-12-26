@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".AddClientFrag" android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/frg_add_client_name" android:id="@+id/lblAddClientName"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/txtAddFragName"/>
+    <TextView
+            android:text="@string/frg_add_client_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/lblAddFragSurname"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/txtAddFragSurname"/>
+    <Button
+            android:text="@string/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnFragSave"/>
+
+</LinearLayout>
